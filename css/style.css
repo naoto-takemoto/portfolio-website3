@@ -1,0 +1,720 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------------
+　基本設定
+---------------------------------------*/
+  @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap');
+body{
+	font-size:16px;
+	line-height: 1.7;
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	color:#333;
+	text-align:justify;
+	text-justify:inter-character;
+	background-image: url("../images/haikei.jpg");
+	background-repeat:repeat;
+	font-family: 'BIZ UDPMincho', serif;
+	}
+
+	a {text-decoration: none;}
+	a:link { color: #dedb56; } /* リンクの色 */
+	a:visited { color: #dedb56; } /* 済みリンク */
+	a:hover {
+		color: #dc2020;
+		text-decoration: underline;
+	}/* リンク上 */
+	a:active { color: #dc2020; }/* onclick */
+
+	dl{
+	-webkit-text-size-adjust: none;
+	}
+/*--------------------------------------
+　大枠囲み
+---------------------------------------*/
+
+#wrapper{
+	width:100%;
+	background:url(../images/hdbg.png) repeat-x;
+}
+
+/*--------------------------------------
+　ヘッダー
+---------------------------------------*/
+
+#header{
+	width:1000px;
+	margin: 0 auto;
+	padding-bottom:13px;
+}
+
+#header_box2{
+	overflow:hidden;
+}
+
+h1{
+	font-size:10px;
+	color:#999797;
+	margin-top:5px;
+}
+
+#header_left{
+	float:left;
+}
+
+#header_right{
+	float:right;
+}
+
+#logo{
+	margin-top:17px;
+}
+
+#header_btn{
+	background:#302513;
+	border-radius:0 0 0.3em 0.3em;
+	padding:2px 21px;
+	color:#ffffff;
+}
+
+#header_btn li{
+	display:inline;
+	background:url(../images/h_arrow.png) 0 50% no-repeat;
+	padding-left:10px;
+}
+
+#header_btn li:first-of-type{
+	margin-right:16px;
+}
+
+#tel{
+	background:url(../images/tel.png) left no-repeat;
+	font-size:30px;
+	color:#302513;
+	padding-left:20px;
+	margin-right: 0;
+  float: right;
+}
+
+#header_btn a {
+	text-decoration: none;
+}
+
+#header_btn a:link {
+	color: #ffffff;
+} /* リンクの色 */
+
+#header_btn a:visited {
+	color: #ffffff;
+} /* 済みリンク */
+
+#header_btn a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}/* リンク上 */
+
+#header_btn a:active {
+	color: #ffffff;
+}/* onclick */
+
+/*--------------------------------------
+　グローバルナビゲーション
+---------------------------------------*/
+
+#gnavi{
+	overflow:hidden;
+	font-size:15px;
+	font-family:"signpainter","dancing-script",Georgia, "Times New Roman", Times,"ほのかアンティーク", "serif";
+	padding-top:10px;
+	list-style-type: none;
+}
+
+#gnavi li{
+	float:left;
+	line-height:0;
+	height:40px;
+	width:200px;
+	text-align:center;
+	color:#302513;
+	background:url(../images/gnavi1_off.png) no-repeat;
+}
+
+#gnavi li:hover{
+	float:left;
+	line-height:0;
+	height:40px;
+	width:200px;
+	text-align:center;
+	color:#302513;
+	background:url(../images/gnavi1_on.png) no-repeat;
+}
+
+#gnavi li a{
+	display:block;
+	color:#302513;
+	text-decoration:none;
+	line-height:16px;
+	padding-top:0px;
+}
+
+#gnavi a:hover{
+	color: #f6cf4c;
+}
+
+#gnavi li strong{
+	font-weight:normal;
+}
+
+/*--------------------------------------
+　キービジュアル
+---------------------------------------*/
+
+#visual_box{
+	width:1000px;
+	margin: 0 auto;
+}
+
+/*--------------------------------------
+　コンテナ
+---------------------------------------*/
+
+#container{
+	width:1000px;
+	margin:0 auto 50px;
+	overflow:hidden;
+	margin-top:24px;
+}
+
+/*--------------------------------------
+　サイド
+---------------------------------------*/
+
+#side{
+	width:202px;
+	float:left;
+}
+
+#side h2{
+	background:url("../images/s_tit.png") left bottom no-repeat;
+	color:#040345;
+	padding:0 0 4px 35px;
+	margin-bottom:4px;
+	line-height:22px;
+	height:23px;
+	font-size:15px;
+	font-weight:bold;
+}
+
+#side ul{
+	margin-bottom:26px;
+}
+
+#side ul li{
+	text-indent:14px;
+	padding:0 0 0 20px;
+	display:block;
+	border-bottom:1px dotted #cccccc;
+	font-size:13px;
+	line-height:35px;
+}
+
+#side ul li a{
+	display:block;
+}
+
+.s_tit{
+	background:#f3f4e4;
+	border: 1px solid #302513;
+	padding-top: 5px;
+	padding-left: 10px;
+	border-radius:0.3em 0.3em 0 0;
+	color:#ffffff;
+	font-size:14px;
+}
+
+.s_box{
+	background:url(../images/sbgnew.png) no-repeat;
+	padding:10px;
+	font-size:13px;
+	color:#FFFFFF;
+	font-family: Georgia, "Times New Roman", Times, "serif";
+    border:solid 1px #302513;
+}
+
+.s_box p:first-of-type{
+	margin-bottom: 20px;
+}
+
+.side_list{
+	background: url(../images/icon1.png) 5% 50% no-repeat;
+}
+
+.side_bnr{
+	margin-bottom:10px
+}
+
+.side_bnr:hover{
+	opacity: 0.6;
+}
+
+
+.s_btn1{
+	background:url(../images/btn1_off.png) no-repeat;
+	margin-bottom: 15px;
+  line-height: 64px;
+}
+
+#side ul a {
+	text-decoration: none;
+}
+
+#side ul a:link {
+	color: #333333;
+} /* リンクの色 */
+
+#side ul a:visited {
+	color: #333333;
+} /* 済みリンク */
+
+#side ul a:hover {
+	color: #dedb56;
+}/* リンク上 */
+
+#side ul a:active {
+	color: #dedb56;
+}/* onclick */
+
+/*--------------------------------------
+　メインコンテンツ
+---------------------------------------*/
+
+#main{
+	width:760px;
+	float:right;
+}
+
+.feature_box1{
+	margin-bottom:40px;
+	overflow:hidden;
+	background-image: url("../images/bg1new-trial.jpg");
+	background-repeat:no-repeat;
+	width:760px;
+	height:432px;
+	position: relative;
+}
+
+.feature_box2{
+	margin-bottom:40px;
+	overflow:hidden;
+	background-image: url("../images/bg2new-trial.jpg");
+	background-repeat:no-repeat;
+	width:760px;
+	height:432px;
+	position: relative;
+}
+
+.feature_box3{
+	margin-bottom:40px;
+	overflow:hidden;
+	background-image: url("../images/bg3new-trial.jpg");
+	background-repeat:no-repeat;
+	width:760px;
+	height:432px;
+	position: relative;
+}
+
+.feature_box1 h3{
+	position: absolute;
+	top:50px;
+	left: 120px;
+	line-height:34px;
+/*	font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";*/
+	letter-spacing: .1em;
+	font-size:18px;
+	font-weight:700;
+	color: #bfb3a3;
+}
+
+.feature_box2 h3{
+	position: absolute;
+	top:20px;
+	right: 50px;
+	line-height:34px;
+/*	font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";*/
+	letter-spacing: .1em;
+	font-size:18px;
+	font-weight:700;
+}
+
+.feature_box3 h3 {
+	position: absolute;
+	top:60px;
+	left: 160px;
+	line-height:34px;
+/*	font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";*/
+	letter-spacing: .1em;
+	font-size:18px;
+	font-weight:700;
+	color: #bfb3a3;
+}
+
+.feature_big{
+	font-size:28px;
+	text-shadow:1px 1px 2px silver;
+}
+
+.feature_box_txt1,.feature_box_txt3{
+	position: absolute;
+	top:177px;
+	left: 60px;
+	width:300px;
+	color: #bfb3a3;
+}
+
+.feature_box_txt2{
+	position: absolute;
+	top:150px;
+	left: 450px;
+	width:270px;
+	color: #302513;
+	opacity: 0.8;
+}
+
+.feature_point{
+	font-size:22px;
+/*	font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";*/
+}
+
+.feature_more_btn1{
+	position:absolute;
+	top:360px;
+	left:220px;
+	cursor: pointer;
+}
+
+.feature_more_btn2{
+	position:relative;
+	top:370px;
+	left:550px;
+}
+
+.feature_more_btn3 {
+	position:absolute;
+	top:370px;
+	left:220px;
+}
+
+.feature_more_btn1 img,.feature_more_btn2 img,.feature_more_btn3 img{
+	width: 140px;
+	height: 35px;
+}
+
+#news{
+	margin-bottom:40px;
+}
+
+#news h2{
+	background:url(../images/tit1.png) left bottom no-repeat;
+	padding:4px 0px 4px 80px;
+	margin-bottom:16px;
+	font-size:20px;
+	font-weight:bold;
+    font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+}
+
+#news dl{
+	overflow:hidden;
+}
+
+#news dt{
+	background:url(../images/icon6.png) 11% 50% no-repeat;
+	float:left;
+	padding-left:27px;
+	line-height:38px;
+}
+
+#news dd{
+	border-bottom:1px dotted #a6a6a6;
+	padding:0 0 0 140px;
+	line-height:38px;
+}
+
+
+	/*--------------------------------------
+	　フッター
+	---------------------------------------*/
+
+	#footer_top{
+		width:1000px;
+		margin:0 auto;
+		overflow: hidden;
+	}
+
+	#footer_top ul{
+		font-size:10px;
+		float:left;
+		padding-top:7px;
+		list-style-type: none;
+	}
+
+	#footer_top ul li{
+		float:left;
+	}
+
+	#footer_top li a{
+		margin: 0 10px;
+		color: #1F4F58;
+		text-decoration: none;
+	}
+
+	#footer_top p{
+		float:right;
+	}
+
+	#footer_bottom{
+		background: #302513;
+		color:#ffffff;
+		font-size:12px;
+	}
+
+	#footer_bottom a{
+		color:#595959;
+	}
+
+	#footer_bottom_box{
+		width:1000px;
+		margin:0 auto;
+		overflow:hidden;
+	}
+
+	#footer_bottom address{
+		float:left;
+		padding-top:3px;
+		font-style: normal;
+	}
+
+	#footer_bottom .copy{
+		float:right;
+		margin-top:38px;
+	}
+
+/*--------------------------------------
+　下層ページ共通
+---------------------------------------*/
+
+#page_ttl{
+	margin:0 auto;
+	background:url(../images/visual_ttl.jpg) no-repeat;
+	overflow:hidden;
+	width:1000px;
+	height: 97px;
+}
+
+#page_ttl p{
+	padding-left:100px;
+	font-size: 60px;
+	line-height: 97px;
+	font-family:"signpainter","dancing-script",Georgia, "Times New Roman", Times,"ほのかアンティーク", "serif";
+	color: #fff;
+	text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+/*--------------------------------------
+　コンセプトページ
+---------------------------------------*/
+
+#concept{
+	margin-bottom:40px;
+	overflow:hidden;
+	background-image: url("../images/concept.png");
+	background-repeat:no-repeat;
+	width:760px;
+	height:1259px;
+	position: relative;
+}
+
+.concept_ttl{
+ position: absolute;
+ text-align: center;
+ top:10%;
+ left: 33%;
+ transform: translateX(-50%),translateY(-50%);
+/* line-height:35px;*/
+/* font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";*/
+ font-size:30px;
+ font-weight:700;
+ letter-spacing: .1em;
+}
+
+.concept_txt{
+  position: absolute;
+  text-align: center;
+  transform: (-50%,-50%);
+  top:210px;
+  left:25%;
+  font-weight:400;
+  font-family: 'BIZ UDPMincho', serif;
+}
+
+.concept_ttl2{
+ position: absolute;
+ text-align: center;
+ top:620px;
+ left: 26%;
+ transform: translateX(-50%),translateY(-50%);
+/* font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";*/
+ font-size:30px;
+ font-weight:700;
+ letter-spacing: .1em;
+}
+
+.concept_txt2{
+  position: absolute;
+  text-align: center;
+  transform: (-50%,-50%);
+  top:55%;
+  left:27%;
+  font-weight:400;
+  font-family: 'BIZ UDPMincho', serif;
+}
+
+/*--------------------------------------
+　メニューページ
+---------------------------------------*/
+
+.menu_ttl{
+	background:url(../images/tit5.png) left bottom no-repeat;
+	padding:4px 0 4px 90px;
+	margin-bottom:16px;
+	font-size:20px;
+	font-weight:bold;
+	font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+}
+
+.menu_txt{
+	margin-bottom: 30px;
+}
+
+.menu_img{
+	margin-bottom: 30px;
+}
+
+.menu_ttl2{
+	background:url(../images/tit3.png) left bottom no-repeat;
+	padding:4px 0 4px 90px;
+	font-size:20px;
+	font-weight:bold;
+	font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+}
+
+.menu_box{
+	background-image: url("../images/menu_bg.jpg");
+	width:760px;
+	height:440px;
+	background-repeat:no-repeat;
+	margin-bottom:40px;
+	position: relative;
+}
+
+.menu_box_txt{
+	position: absolute;
+	width: 700px;
+	top:30px;
+	left:30px;
+}
+
+.menu_btn{
+	position: absolute;
+	top:170px;
+	left:300px;
+}
+
+/*--------------------------------------
+　よくあるご質問ページ
+---------------------------------------*/
+
+#qa dt{
+	border-bottom:1px dotted #e2546c;
+	font-weight:bold;
+}
+
+#qa dd{
+	margin-bottom:40px;
+}
+
+.q_txt{
+	font-weight:bold;
+	color:#040345;
+	padding-right:5px;
+}
+
+.a_txt{
+	font-weight:bold;
+	color:#5aaee9;
+	padding-right:5px;
+}
+
+.qa_img{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+/*--------------------------------------
+　アクセスページ
+---------------------------------------*/
+
+.access_ttl{
+	background:url(../images/tit4.png) left bottom no-repeat;
+	padding:4px 0 4px 90px;
+	margin-bottom:16px;
+	font-size:20px;
+	font-weight:bold;
+	font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+}
+
+.access_txt{
+	margin-bottom: 30px;
+}
+
+.access_map{
+	margin-bottom: 40px;
+}
+
+.access_img{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+/*--------------------------------------
+　お問い合わせページ
+---------------------------------------*/
+
+.inquiry_ttl{
+	background:url(../images/tit2.png) left bottom no-repeat;
+	padding:4px 0 4px 90px;
+	margin-bottom:16px;
+	font-size:20px;
+	font-weight:bold;
+	font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+}
+
+.inquiry_form{
+	margin-bottom: 30px;
+}
+
+.inquiry_form table{
+	width: 100%;
+}
+
+.inquiry_form td{
+	padding: 5px;
+}
+
+.inquiry_txt{
+	margin-bottom: 30px;
+}
+
+.inquiry_img{
+	text-align: center;
+	margin-bottom: 40px;
+}
